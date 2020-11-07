@@ -62,8 +62,8 @@
 			children = (
 				BDF796712553F76700E40B7B /* AppDelegate.swift */,
 				BDF796732553F76700E40B7B /* SceneDelegate.swift */,
-				BDF7968B255421D500E40B7B /* SearchViewController.swift */,
 				BDF796752553F76700E40B7B /* ViewController.swift */,
+				BDF7968B255421D500E40B7B /* SearchViewController.swift */,
 				BDF796872554178500E40B7B /* AppStoreItemTableViewCell.swift */,
 				BDF796772553F76700E40B7B /* Main.storyboard */,
 				BDF7967A2553F76800E40B7B /* Assets.xcassets */,

@@ -32,13 +32,12 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBW-Bp-iqE">
                                         <rect key="frame" x="49" y="42" width="349" height="1"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="RFM-M6-5AU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="WBW-Bp-iqE" secondAttribute="bottom" constant="7" id="9Au-vf-Hwn"/>
                                     <constraint firstItem="AVp-bw-Nzf" firstAttribute="top" secondItem="LxL-Yu-KKV" secondAttribute="top" constant="15" id="A7o-A8-2o7"/>
@@ -93,6 +92,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nao-TS-xFx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tSH-NW-BSi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
