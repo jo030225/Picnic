@@ -12,8 +12,8 @@ final class AppStoreItemTableViewCell: UITableViewCell {
     var thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .red
-        imageView.layer.cornerRadius = 8
+        imageView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+        imageView.layer.cornerRadius = 10
         return imageView
     }()
     var titleLabel: UILabel = {
@@ -26,14 +26,18 @@ final class AppStoreItemTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "jeasungLEE"
+        label.textColor = UIColor(red: 158/255, green: 160/255, blue: 161/255, alpha: 1.0)
+        label.font = UIFont.systemFont(ofSize: 10)
         return label
     }()
     var openButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("보기", for: .normal)
-        button.backgroundColor = .blue
-        button.layer.cornerRadius = 17
+        button.setTitleColor(UIColor(red: 52/255, green: 120/255, blue: 246/255, alpha: 1.0), for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        button.backgroundColor = UIColor(red: 238/255, green: 238/255, blue: 239/255, alpha: 1.0)
+        button.layer.cornerRadius = 14
         return button
     }()
     
@@ -70,21 +74,21 @@ final class AppStoreItemTableViewCell: UITableViewCell {
     }
 }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    func commonInit() {
 //        thumbnailImageView = UIImageView()
 //        titleLabel = UILabel()
@@ -105,5 +109,5 @@ final class AppStoreItemTableViewCell: UITableViewCell {
 //    required init?(coder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
 //    }
-    
+
 
