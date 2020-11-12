@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD15FE04255D309A0093B1C1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BD15FE03255D309A0093B1C1 /* Alamofire */; };
+		BD15FE07255D34EF0093B1C1 /* AppStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15FE06255D34EF0093B1C1 /* AppStoreModel.swift */; };
+		BD15FE0B255D4A250093B1C1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BD15FE0A255D4A250093B1C1 /* Kingfisher */; };
 		BDF796722553F76700E40B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF796712553F76700E40B7B /* AppDelegate.swift */; };
 		BDF796742553F76700E40B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF796732553F76700E40B7B /* SceneDelegate.swift */; };
 		BDF796762553F76700E40B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF796752553F76700E40B7B /* ViewController.swift */; };
@@ -18,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD15FE06255D34EF0093B1C1 /* AppStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreModel.swift; sourceTree = "<group>"; };
 		BDF7966E2553F76700E40B7B /* GSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF796712553F76700E40B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF796732553F76700E40B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD15FE0B255D4A250093B1C1 /* Kingfisher in Frameworks */,
+				BD15FE04255D309A0093B1C1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7144A58ED683ECD24A5B80CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDF796652553F76700E40B7B = {
 			isa = PBXGroup;
 			children = (
 				BDF796702553F76700E40B7B /* GSM */,
 				BDF7966F2553F76700E40B7B /* Products */,
+				7144A58ED683ECD24A5B80CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +83,7 @@
 				BDF7967A2553F76800E40B7B /* Assets.xcassets */,
 				BDF7967C2553F76800E40B7B /* LaunchScreen.storyboard */,
 				BDF7967F2553F76800E40B7B /* Info.plist */,
+				BD15FE06255D34EF0093B1C1 /* AppStoreModel.swift */,
 			);
 			path = GSM;
 			sourceTree = "<group>";
@@ -89,6 +104,10 @@
 			dependencies = (
 			);
 			name = GSM;
+			packageProductDependencies = (
+				BD15FE03255D309A0093B1C1 /* Alamofire */,
+				BD15FE0A255D4A250093B1C1 /* Kingfisher */,
+			);
 			productName = GSM;
 			productReference = BDF7966E2553F76700E40B7B /* GSM.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +135,10 @@
 				Base,
 			);
 			mainGroup = BDF796652553F76700E40B7B;
+			packageReferences = (
+				BD15FE02255D309A0093B1C1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BD15FE09255D4A250093B1C1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = BDF7966F2553F76700E40B7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,6 +169,7 @@
 				BDF7968C255421D500E40B7B /* SearchViewController.swift in Sources */,
 				BDF796762553F76700E40B7B /* ViewController.swift in Sources */,
 				BDF796722553F76700E40B7B /* AppDelegate.swift in Sources */,
+				BD15FE07255D34EF0093B1C1 /* AppStoreModel.swift in Sources */,
 				BDF796882554178500E40B7B /* AppStoreItemTableViewCell.swift in Sources */,
 				BDF796742553F76700E40B7B /* SceneDelegate.swift in Sources */,
 			);
@@ -349,6 +373,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD15FE02255D309A0093B1C1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		BD15FE09255D4A250093B1C1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD15FE03255D309A0093B1C1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD15FE02255D309A0093B1C1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BD15FE0A255D4A250093B1C1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD15FE09255D4A250093B1C1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDF796662553F76700E40B7B /* Project object */;
 }

@@ -29,6 +29,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="searchTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="AY9-DX-QGV"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBW-Bp-iqE">
                                         <rect key="frame" x="49" y="42" width="349" height="1"/>
