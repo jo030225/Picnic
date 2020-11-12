@@ -12,8 +12,6 @@ import Kingfisher
 class SearchViewController: UIViewController {
     var model: AppStoreModel?
     
-    
-    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
