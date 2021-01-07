@@ -22,8 +22,9 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        apiCall(term: "ㄱ")
     }
+    
     
     @IBAction func searchTextField(_ sender: UITextField) {
         apiCall(term: sender.text!)
